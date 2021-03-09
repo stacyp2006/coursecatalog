@@ -1,0 +1,13 @@
+header {
+  background-color: #007d8c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.my-courses-link {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
