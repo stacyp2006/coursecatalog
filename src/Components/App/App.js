@@ -9,8 +9,10 @@ class App extends Component {
     return (
       <main className="main-area">
         <Header />
-        <Student />
-        <Catalog />
+        <section className="container">
+          <Student />
+          <Catalog />
+        </section>
       </main>
     );
   }
