@@ -1,0 +1,8 @@
+.course-card {
+  box-sizing: border-box;
+  margin: 5px;
+  width: 20%;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
