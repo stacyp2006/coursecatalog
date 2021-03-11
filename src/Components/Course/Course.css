@@ -2,10 +2,9 @@
   background-color: #bbb8b8;
   box-sizing: border-box;
   margin: 5px;
-  width: 22%;
-  /* margin-bottom: 50px; */
+  width: min-content;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  padding: 5px;
+  padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* padding: 5px; */
 }
 
 .register-btn {
