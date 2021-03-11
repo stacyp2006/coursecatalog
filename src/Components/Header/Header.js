@@ -1,6 +1,6 @@
 import React from 'react';
-import MyCourses from '../MyCourses/MyCourses';
-import { Route, Link } from 'react-router-dom';
+// import MyCourses from '../MyCourses/MyCourses';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -12,9 +12,6 @@ const Header = () => {
           My Courses
         </Link>
       </nav>
-      <Route exact path="/mycourses">
-        <MyCourses />
-      </Route>
     </header>
   );
 };
