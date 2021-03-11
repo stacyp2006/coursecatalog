@@ -5,6 +5,22 @@ import Catalog from '../Catalog/Catalog';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      myCourses: [],
+    };
+  }
+
+  addToMyCourses = (newCourse) => {
+    const selectedCourse = this.state.myCourses.find(
+      (course) => course.id === newCourse.id
+    );
+    if (!selectedCourse) {
+      this.setState({ myCourses: [...this.state.myCourses, newCourse] });
+    }
+  };
+
   render() {
     return (
       <main className="main-area">
