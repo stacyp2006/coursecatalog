@@ -1,0 +1,10 @@
+.my-courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+}
