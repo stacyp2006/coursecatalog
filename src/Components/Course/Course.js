@@ -11,10 +11,10 @@ class Course extends Component {
 
   addCourse = (event) => {
     let newCourse = {
-      name: this.props.name,
-      key: this.props.id,
-      id: this.props.id,
-      time: this.props.time,
+      name: this.props.courseInfo.name,
+      key: this.props.courseInfo.id,
+      id: this.props.courseInfo.id,
+      time: this.props.courseInfo.time,
     };
     this.setState({ isMyCourse: true });
     this.props.addToMyCourses(newCourse);
