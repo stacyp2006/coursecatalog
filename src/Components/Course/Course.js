@@ -34,7 +34,7 @@ class Course extends Component {
           <p className="course-id">{this.props.courseInfo.id}</p>
           <p className="course-time">{this.props.courseInfo.time}</p>
         </section>
-        {!this.state.isMyCourse && (
+        {!this.props.isMyCourse && (
           <button
             className="register-btn"
             type="button"
@@ -44,7 +44,7 @@ class Course extends Component {
             Register
           </button>
         )}
-        {this.state.isMyCourse && (
+        {this.props.isMyCourse && (
           <button
             className="remomve-btn"
             type="button"
