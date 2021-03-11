@@ -21,6 +21,15 @@ class App extends Component {
     }
   };
 
+  removeFromMyCourses = (id) => {
+    this.setState((state) => {
+      const list = state.myCourses.filter((course) => course.id !== id);
+      return {
+        list,
+      };
+    });
+  };
+
   render() {
     return (
       <main className="main-area">
