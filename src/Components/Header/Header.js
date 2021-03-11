@@ -1,4 +1,5 @@
 import React from 'react';
+import MyCourses from '../MyCourses/MyCourses';
 import { Route, Link } from 'react-router-dom';
 import './Header.css';
 
@@ -11,9 +12,9 @@ const Header = () => {
           My Courses
         </Link>
       </nav>
-      {/* <Route exact path="/mycourses">
+      <Route exact path="/mycourses">
         <MyCourses />
-      </Route> */}
+      </Route>
     </header>
   );
 };
