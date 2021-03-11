@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Student from '../Student/Student';
+import MyCourses from '../MyCourses/MyCourses';
+import { Route } from 'react-router-dom';
 import Catalog from '../Catalog/Catalog';
 import './App.css';
 
@@ -33,10 +35,24 @@ class App extends Component {
   render() {
     return (
       <main className="main-area">
-        <Header />
+        <Header courseList={this.state.myCourses} />
         <section className="container">
           <Student />
-          <Catalog />
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <Catalog
+                addToMyCourses={this.addToMyCourses}
+                removeFromMyCourses={this.removeFromMyCourses}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/mycourses"
+            render={() => <MyCourses courseList={this.state.myCourses} />}
+          />
         </section>
       </main>
     );
