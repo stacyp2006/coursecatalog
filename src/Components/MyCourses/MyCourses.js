@@ -3,8 +3,9 @@ import Course from '../Course/Course';
 import './MyCourses.css';
 
 const MyCourses = ({ courseList, addToMyCourses, removeFromMyCourses }) => {
-  let displayMyCourses = () => {
-    return courseList.map((course, i) => {
+  let courseCards;
+  if (courseList.length !== 0) {
+    courseCards = courseList.map((course, i) => {
       return (
         <Course
           key={i}
@@ -14,9 +15,14 @@ const MyCourses = ({ courseList, addToMyCourses, removeFromMyCourses }) => {
         />
       );
     });
-  };
+  } else {
+    return (
+      <p className="add-message">
+        Return to the Home page and add some courses to your schedule.
+      </p>
+    );
+  }
 
-  const courseCards = displayMyCourses();
   return (
     <section className="my-courses">
       <h2 className="my-courses-title">My Courses</h2>
