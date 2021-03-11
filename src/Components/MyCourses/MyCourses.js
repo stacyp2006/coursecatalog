@@ -2,7 +2,7 @@ import React from 'react';
 import Course from '../Course/Course';
 import './MyCourses.css';
 
-const MyCourses = ({ courseList, addToMyCourses, removeFromMyCourses }) => {
+const MyCourses = ({ courseList, removeFromMyCourses }) => {
   let courseCards;
   if (courseList.length !== 0) {
     courseCards = courseList.map((course, i) => {
@@ -10,7 +10,7 @@ const MyCourses = ({ courseList, addToMyCourses, removeFromMyCourses }) => {
         <Course
           key={i}
           courseInfo={course}
-          addToMyCourses={addToMyCourses}
+          isMyCourse={true}
           removeFromMyCourses={removeFromMyCourses}
         />
       );
