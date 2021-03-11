@@ -6,6 +6,10 @@ header {
   padding: 15px;
 }
 
+.homelink {
+  text-decoration: none;
+  color: black;
+}
 .my-courses-link {
   text-decoration: none;
   color: black;
