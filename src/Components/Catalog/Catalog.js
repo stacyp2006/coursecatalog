@@ -10,7 +10,8 @@ class Catalog extends Component {
         <Course
           key={i}
           courseInfo={course}
-          addToCourseList={this.addToCourseList}
+          addToMyCourses={this.props.addToMyCourses}
+          removeFromMyCourses={this.props.removeFromMyCourses}
         />
       );
     });
