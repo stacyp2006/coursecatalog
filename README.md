@@ -9,7 +9,7 @@ This is a simple web UI that would allow students to view available courses, reg
 ## Set Up
 
 - Clone down this repo to your terminal
-- Install dependencies with `npm test`
+- Install dependencies with `npm install`
 - Run `npm start`. The project should be available on `localhost:3000`.
 - To run tests, run `npm test`
 
