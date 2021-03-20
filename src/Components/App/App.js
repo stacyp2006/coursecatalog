@@ -51,7 +51,12 @@ class App extends Component {
           <Route
             exact
             path="/mycourses"
-            render={() => <MyCourses courseList={this.state.myCourses} />}
+            render={() => (
+              <MyCourses
+                courseList={this.state.myCourses}
+                removeFromMyCourses={this.removeFromMyCourses}
+              />
+            )}
           />
         </section>
       </main>
