@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <main className="main-area">
-        <Header courseList={this.state.myCourses} />
+        <Header />
         <section className="container">
           <Student />
           <Route
