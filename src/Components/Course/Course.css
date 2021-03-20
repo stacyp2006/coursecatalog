@@ -17,7 +17,7 @@
   justify-content: space-around;
 }
 
-.register-btn {
+button {
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
